@@ -1,0 +1,117 @@
+#inputStuff {
+  position: relative;
+  top: 200px;
+
+}
+
+
+.checkedbackground {
+  background-color:lightblue;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.grid {
+  width: auto;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='col-']{
+  padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+
+.module {
+  padding: 20px;
+  background: #eee;
+}
+
+h1 {
+  text-align: center;
+}
+
+.player {
+   position: relative;
+   padding-top: 56.2757202%;
+}
+.player video {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+}
+
+
+.col-6-12 {
+  width: 50%;
+}
+
+.col-4-12 {
+  width: 33.33%;
+}
+
+.col-12-12 {
+  width: 100%;
+}
+
+article {
+  font-size: 1em;
+}
+
+
+/* Phone */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+article {font-size: .5em;
+}
+h1 {
+  font-size: 1em;
+}
+}
+
+
+/* Tablet */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+article{font-size: .75em;}
+h1 {font-size: 1.5em}
+}
+
+/* Laptop*/
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  article {font-size: 1em;}
+  h1 {
+    font-size: 2em;
+  }
+}
